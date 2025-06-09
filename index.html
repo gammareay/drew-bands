@@ -43,7 +43,7 @@
     var drewbands = L.geoJson(data  ,{
       pointToLayer: function(feature,latlng){
   	     var marker = L.marker(latlng,{icon: guitarIcon});
-         marker.bindPopup(feature.properties.band + '<br/>' + feature.properties.venue + '<br/>' + feature.properties.date + '<br/>' + feature.properties.latitude + '<br/>' + feature.properties.longitude);
+         marker.bindPopup(feature.properties.band + '<br/>' + feature.properties.band_type + '<br/>' + feature.properties.venue + '<br/>' + feature.properties.date + '<br/>' + feature.properties.latitude + '<br/>' + feature.properties.longitude);
          return marker;
       }
     });
